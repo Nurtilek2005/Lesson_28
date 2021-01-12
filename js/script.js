@@ -53,6 +53,9 @@ let animals = [
 ]
 
 let printFarmInventory = function (units) {
+  for(let item of units) {
+    console.log(zeroFill(item.count, item.max,) + ' ' + item.name);
+  }
   // console.log(zeroFill(cows, 3) + ' cows');
   // console.log(zeroFill(chickens, 3) + ' chickens');
   // console.log(zeroFill(sheeps, 3) + ' sheeps');
